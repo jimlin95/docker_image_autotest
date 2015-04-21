@@ -112,3 +112,4 @@ declare -x http_proxy="http://10.241.104.240:5678/"
 declare -x https_proxy="https://10.241.104.240:5678/"
 
 declare -x DISPLAY=:0
+export ANDROID_HOME=/opt/android-sdk-linux
