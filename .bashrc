@@ -109,7 +109,7 @@ export ANDROID_VIEW_CLIENT_HOME=/home/jenkins/automated_test/AndroidViewClient
 declare -x all_proxy="socks://10.241.104.240:5678/"
 declare -x ftp_proxy="ftp://10.241.104.240:5678/"
 declare -x http_proxy="http://10.241.104.240:5678/"
-declare -x https_proxy="https://10.241.104.240:5678/"
+declare -x https_proxy="http://10.241.104.240:5678/"
 
 declare -x DISPLAY=:0
 export ANDROID_HOME=/opt/android-sdk-linux
