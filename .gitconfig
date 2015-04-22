@@ -22,7 +22,9 @@
 [gc]
 	auto = 1
 [http]
-	sslVerify = false
+	#sslVerify = false
+	sslVerify = true
+    sslCAinfo = /etc/ssl/certs/ca-certificates.crt
 	proxy = http://10.241.104.240:5678/
 [core]
 	#gitProxy = /home/jim/bin/git-proxy.sh 
