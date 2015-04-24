@@ -1,3 +1,3 @@
 #!/bin/bash
 #run docker
-docker run --name autotest --privileged -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix:/tmp/.X11-unix -d -p 2222:22 jimlin95/cts_arm:v44R3
+docker run --name cts_mediafiles  -v /home/jenkins/android-cts-media-1.1 jimlin95/cts_mediafiles:v1.1
