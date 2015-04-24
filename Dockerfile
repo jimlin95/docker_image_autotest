@@ -17,13 +17,13 @@ RUN echo "jenkins:jenkins" | chpasswd
 USER jenkins
 
 # Install cts media files
-ADD android-cts-media-1.1.zip /home/jenkins/
-RUN cd /home/jenkins && unzip android-cts-media-1.1.zip
-RUN cd /home/jenkins && rm -f android-cts-media-1.1.zip
+ADD android-cts-4.4_r3-linux_x86-arm.zip /home/jenkins/
+RUN cd /home/jenkins && unzip android-cts-4.4_r3-linux_x86-arm.zip 
+RUN cd /home/jenkins && rm -f android-cts-4.4_r3-linux_x86-arm.zip 
 
 USER root
 
 # Cleaning
 RUN apt-get clean  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-VOLUME ["/home/jenkins/android-cts-media-1.1"]
+VOLUME ["/home/jenkins/android-cts"]

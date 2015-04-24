@@ -1,3 +1,3 @@
 #!/bin/bash
 #run docker
-docker run --name cts_mediafiles  -v /home/jenkins/android-cts-media-1.1 jimlin95/cts_mediafiles:v1.1
+docker run --name cts_files  -v /home/jenkins/android-cts jimlin95/cts_files:v44R3
